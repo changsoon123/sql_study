@@ -1,0 +1,13 @@
+Hello Python!!
+
+안녕하세요
+
+1 >> goodbad
+2 >> goodbad
+3 >> goodbad
+4 >> goodbad
+5 >> goodbad
+6 >> goodbad
+7 >> goodbad
+8 >> goodbad
+9 >> goodbad
