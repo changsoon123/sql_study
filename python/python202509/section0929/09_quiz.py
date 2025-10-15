@@ -71,8 +71,23 @@ print("두수사이의 합 : %d" % sum)
 a = 3
 b = 5
 op = "+"
+res = 0
 
-print("%d %s %d = %d" % (a,op,b,a + b))
+if op == "+":
+    res = a + b
+elif op == "-":
+    res = a - b
+elif op == "*":
+    res = a * b
+elif op == "/":
+    res = a / b
+elif op == "%":
+    res = a % b
+
+if op == "/":
+    print("%d %s %d = %.1f" % (a,op,b,res))
+else:
+    print("%d %s %d = %d" % (a,op,b,res))
 
 
 #문제5) 1~100중에서 짝수의 합, 홀수의 합을 각각 구하시오
@@ -84,6 +99,32 @@ for i in range(1,101):
         even += i
     else:
         odd += i
+
+print("even 값 : %d" % even)
+print("odd 값 : %d" % odd)
+
+# switch 이론
+# -> 짝수/홀수, Yes/No, On/Off, True/False
+
+even = 0
+odd = 0
+flag = False
+i = 1
+
+while i<=100:
+
+    if flag:
+        even += i
+        flag = False
+    else:
+        odd += i
+        flag = True
+
+    i += 1
+
+print(flag)
+print(even,odd)
+
 
 #문제6) 운행거리에 따라 택시 요금을 계산하는 프로그램
 #      2000m까지는 기본요금 900원이고

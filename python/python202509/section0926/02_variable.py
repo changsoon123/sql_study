@@ -85,7 +85,7 @@ kor = 80
 eng = 85
 mat = 100
 
-print(name)
+print(name) 
 print(kor)
 print(eng)
 print(mat)
