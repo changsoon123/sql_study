@@ -26,3 +26,23 @@ FROM hr.employees;
 
 SELECT hire_date, hire_date + 100, hire_date - 100
 FROM hr.employees;
+
+SELECT a * b / c + d - e
+FROM dual;
+
+SELECT ((((a * b) / c) + d) - e)
+FROM dual;
+
+SELECT
+        employee_id,
+        salary,
+        commission_pct,
+        salary * 12 + salary * 12 * nvl(commission_pct,0)
+FROM hr.employees;
+
+-- PL/SQL ¹®¹ý
+IF commision_pct is null THEN
+    RETURN 0;
+ELSE
+    RETURN commission_pct;
+END IF;
