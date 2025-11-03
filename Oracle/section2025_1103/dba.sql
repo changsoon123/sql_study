@@ -14,3 +14,7 @@ SELECT * FROM dba_data_files WHERE tablespace_name = 'USERS';
 
 SELECT * FROM dba_segments WHERE owner='HR' AND segment_name = 'EMP';
 SELECT * FROM dba_extents WHERE owner='HR' AND segment_name = 'EMP';
+
+
+SELECT tablespace_name, block_size 
+FROM dba_tablespaces;

@@ -214,3 +214,25 @@ WITH
     SELECT *
         FROM dept_cost
         WHERE sumsal >(SELECT dept_avg FROM avg_cost);
+        
+SELECT * FROM user_recyclebin;
+
+SELECT * FROM user_extents WHERE segment_name = 'EMP';
+SELECT * FROM user_segments WHERE SEGMENT_NAME = 'EMP';
+
+SELECT tablespace_name, block_size 
+FROM dba_tablespaces;
+
+SELECT * FROM user_tab_comments WHERE table_name = 'EMPLOYEES';
+SELECT * FROM user_col_comments WHERE table_name = 'EMPLOYEES';
+
+
+SELECT * FROM user_tab_comments WHERE table_name = 'EMP';
+
+SELECT * FROM all_objects WHERE object_name = 'EMP';
+SELECT * FROM all_views WHERE view_name = 'EMP_VIEW';
+
+SELECT * FROM user_objects WHERE object_name = 'EMP';
+SELECT * FROM user_views WHERE view_name = 'EMP_VIEW';
+
+ 
