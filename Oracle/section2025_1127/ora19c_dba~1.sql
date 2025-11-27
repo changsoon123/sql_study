@@ -1,0 +1,1 @@
+select name, value, default_value, issys_modifiable from v$parameter where name = 'sort_area_size';
