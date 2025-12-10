@@ -1,0 +1,1 @@
+create table new(id number);
