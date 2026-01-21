@@ -1,0 +1,1 @@
+select count(*) from emp where employee_id = 100;
